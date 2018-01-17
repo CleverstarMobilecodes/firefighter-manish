@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Project\\2017\\firefighters_android_manish\\calendarlibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Great Developer\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.1.aar\\48f414d744bf8a019a570e01c6676d18\\res\\values-sw600dp-v13\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,11,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "295,364,434,504,583,899,1198,1269,1337",
+                        "endColumns": "68,69,69,78,75,58,70,67,54",
+                        "endOffsets": "359,429,499,578,654,953,1264,1332,1387"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,194,264,343,419,478,549,617",
+                        "endColumns": "68,69,69,78,75,58,70,67,54",
+                        "endOffsets": "119,189,259,338,414,473,544,612,667"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "F:\\Project\\2017\\firefighters_android_manish\\calendarlibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\GreenLose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.1.1.aar\\aad66fc17692c20e7c44e8a19c1c69bf\\res\\values-sw600dp-v13\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,11,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "295,364,434,504,583,899,1198,1269,1337",
+                        "endColumns": "68,69,69,78,75,58,70,67,54",
+                        "endOffsets": "359,429,499,578,654,953,1264,1332,1387"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,194,264,343,419,478,549,617",
+                        "endColumns": "68,69,69,78,75,58,70,67,54",
+                        "endOffsets": "119,189,259,338,414,473,544,612,667"
+                    }
+                }
+            ]
+        }
+    ]
+}

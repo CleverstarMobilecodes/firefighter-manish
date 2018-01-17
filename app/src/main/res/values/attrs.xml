@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="vFont">
+        <attr name="typeface" format="enum">
+            <enum name="palatino_boldItalic_ttf" value="0"/>
+            <enum name="palatino_ttc" value="1"/>
+            <enum name="helvetica_ttf" value="2"/>
+            <enum name="helvetica_light_ttf" value="3"/>
+            <enum name="swis721_bt_roman_ttf" value="4"/>
+            <enum name="swis721_cn_bt_bold_ttf" value="5"/>
+            <enum name="swiss_721_swa_ttf" value="6"/>
+            <enum name="helvetica_Bold.ttf" value="7"/>
+        </attr>
+    </declare-styleable>
+</resources>

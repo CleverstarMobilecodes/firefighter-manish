@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">FireFighters</string>
+
+    <string name="msg_internet_connection">Check your Internet Connection</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">583711578483769</string>
+
+
+    <!-- Login screen-->
+
+    <string name="you_dont_have">You don\'t have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email address</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <!-- Login screen-->
+    <string name="create_acc">Create account</string>
+    <string name="required_field">*Required fields</string>
+    <string name="retype_pass">Retype Password*</string>
+    <string name="first_name">First name*</string>
+    <string name="last_name">Last name*</string>
+    <string name="email_add">Email Address*</string>
+    <string name="mobile_number">Phone number*</string>
+    <string name="password_star">Password*</string>
+
+    <string name="date_formate">DD-MM-YYYY**</string>
+
+
+    <!-- right navigation view -->
+    <string name="free_credit_intro">For $0.99 a month you will get an all access pass to the Firefighters Mobile App! Not only will you get unlimited album access, but access to the greeting card and calendar generator, digital calendar- and so much more.</string>
+
+
+    <!-- start selection activity-->
+
+    <string name="selection_info">I\'d like to create a…zz</string>
+
+    <string name="step2">1. SELECT YOUR PHOTOS</string>
+    <string name="step3">2. ADD TEXT</string>
+    <string name="step4">3. SHARE YOUR DESIGN</string>
+    <string name="tap_to_unlock">Tap to unlock</string>
+    <string name="slide_transition_time">Slide Transition Time</string>
+    <string name="lbl_subtotal">Subtotal</string>
+    <string name="lbl_savings">Savings</string>
+    <string name="lbl_GST">GST</string>
+    <string name="lbl_shipping">Shipping</string>
+    <string name="lbl_total">TOTAL</string>
+    <string name="lbl_editCheckoutCart"><![CDATA[Edit & Checkout your cart]]></string>
+    <string name="lbl_yourItems">Your items</string>
+    <string name="lbl_shippingAddress">Shipping Details</string>
+    <string name="lbl_payDetails">Payment Details</string>
+    <string name="lbl_item">Item</string>
+    <string name="lbl_Qty">Qty</string>
+    <string name="lbl_dollor">$</string>
+    <string name="hottest_products">Hottest Products</string>
+    <string name="top_text">Top text</string>
+    <string name="my_saved_images">My Saved Images</string>
+    <string name="lbl_save_changes">Save changes</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="tap_to_play">Tap to play slideshow</string>
+    <string name="news">News</string>
+    <string name="calendar">Calendar</string>
+    <string name="gallery">Gallery</string>
+    <string name="shop">Shop</string>
+    <string name="buy">Gain Access</string>
+    <string name="restore">Restore</string>
+    <string name="most_popular">MOST POPULAR</string>
+    <string name="kindling">KINDLING</string>
+    <string name="purchasing">Gain Unlimited Access!</string>
+    <string name="credits">CREDITS</string>
+    <string name="inferno">INFERNO</string>
+    <string name="wildfire">WILDFIRE</string>
+    <string name="greeting_card">GREETING CARD</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_your_theme">Choose your theme</string>
+    <string name="or">OR</string>
+    <string name="item">Item</string>
+    <string name="qty">Qty</string>
+    <string name="add">Add</string>
+    <string name="new_event">New Event</string>
+    <string name="notes">Notes</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="add_text_to_image">Add text to your image</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="state">State</string>
+    <string name="pincode">Postcode</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="create">Create</string>
+    <string name="printable_calendar">CALENDAR</string>
+    <string name="change_network_type">Please turn on your mobile data to send MMS messages.</string>
+
+    <string name="welcome_digital">Welcome to the Firefighters Digital Calendar! In this calendar you will find a new photo each day you open up the calendar, and you’ll be able to use this calendar for all your scheduling needs.</string>
+    <string name="new_user_two">As a new user of the app the first 2 days will be free- For ongoing unlimited access upgrade your account to a paid membership- for each month of membership you will receive a photo of the day every day within the digital calendar!</string>
+
+</resources>
+

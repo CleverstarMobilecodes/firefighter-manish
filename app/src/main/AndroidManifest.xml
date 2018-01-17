@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.firefighterscalendar">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        tools:overrideLibrary="com.paypal.android.sdk.payments" />
+
+    <permission
+        android:name="com.firefighterscalendar.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="com.firefighterscalendar.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider  android:authorities="com.facebook.app.FacebookContentProvider583711578483769"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".auth.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateVisible" />
+
+        <activity
+            android:name=".inapp.InAppPurchaseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".auth.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".album.StartCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HowtoCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectThemeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddTextActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".album.AlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FullviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".custom.UnlockDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".product.ShopListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myorder.CheckOutOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".product.ProductDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myorder.ProcessOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".calendar.DigitalCalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShareCardsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name=".utils.OpenGallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".calendar.OpenCalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".calendar.NewEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".paypal.PayPalIntegrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myorder.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myorder.MyOrderDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".calendar.PrintableCalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewsDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.AboutCharityActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".album.SavedImageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".album.MonthlyPicActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.FullImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".utils.AlarmReceiver"
+            android:process=":remote" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.firefighterscalendar.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".utils.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".calendar.PrintCalendarTextActivity" />
+
+        <!--<activity android:name="com.android.mms.ui.ComposeMessageActivity" />-->
+
+    </application>
+
+</manifest>

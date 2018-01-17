@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/light_theme"
+              android:orientation="vertical">
+
+    <com.firefighterscalendar.custom.CustomEditText
+        android:id="@+id/editName"
+        style="@style/style_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/name"
+        android:maxLength="50"
+        app:typeface="helvetica_ttf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white"/>
+
+    <com.firefighterscalendar.custom.CustomEditText
+        android:id="@+id/editAddress"
+        style="@style/style_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="top"
+        android:hint="@string/address"
+        android:inputType="textMultiLine"
+        app:typeface="helvetica_ttf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.firefighterscalendar.custom.CustomEditText
+                android:id="@+id/editState"
+                style="@style/style_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/state"
+                android:inputType="text"
+                android:maxLength="40"
+                app:typeface="helvetica_ttf"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.firefighterscalendar.custom.CustomEditText
+                android:id="@+id/editPincode"
+                style="@style/style_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/pincode"
+                android:inputType="text"
+                android:maxLength="8"
+                app:typeface="helvetica_ttf"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.firefighterscalendar.custom.CustomEditText
+        android:id="@+id/editPhone"
+        style="@style/style_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:maxLength="15"
+        app:typeface="helvetica_ttf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white"/>
+
+    <com.firefighterscalendar.custom.CustomEditText
+        android:id="@+id/editEmail"
+        style="@style/style_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        app:typeface="helvetica_ttf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white"/>
+</LinearLayout>

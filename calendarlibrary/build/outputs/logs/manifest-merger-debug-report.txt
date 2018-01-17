@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+	package
+		ADDED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:11-47
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml:1:1-50
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+uses-sdk
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml
+		INJECTED from E:\Project\2017\firefighters_android_manish\calendarlibrary\src\main\AndroidManifest.xml

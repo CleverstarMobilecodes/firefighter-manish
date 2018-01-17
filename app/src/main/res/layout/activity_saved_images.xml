@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_theme"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_inner" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleviewImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.firefighterscalendar.custom.CustomTextView
+        android:id="@+id/textNoImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Images Available!"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
+        android:visibility="gone"
+        app:typeface="helvetica_Bold.ttf" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/dark_theme"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_inner"/>
+
+    <com.firefighterscalendar.custom.CustomTextView
+        android:id="@+id/titleImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/choose_your_theme"
+        android:textColor="@color/light_theme_color"
+        android:textSize="@dimen/sp_20"
+        app:typeface="helvetica_Bold.ttf"/>
+
+
+    <ExpandableListView
+        android:id="@+id/expanListTheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

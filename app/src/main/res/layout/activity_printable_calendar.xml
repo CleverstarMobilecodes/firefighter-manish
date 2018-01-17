@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_theme"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_inner" />
+
+    <ScrollView
+        android:id="@+id/svImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/flCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawingCacheQuality="high">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20">
+
+                    <ImageView
+                        android:id="@+id/imgCalendarImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1" />
+
+                    <com.marcohc.robotocalendar.RobotoCalendarView
+                        android:id="@+id/robotoCalendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_theme"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawingCacheQuality="high"
+        android:orientation="horizontal">
+
+        <com.firefighterscalendar.custom.CustomTextView
+            android:id="@+id/textSelectDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="Select Month and Year"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_18"
+            app:typeface="helvetica_ttf" />
+
+        <com.firefighterscalendar.custom.CustomTextView
+            android:id="@+id/textNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="@dimen/dp_10"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_18"
+            app:typeface="helvetica_ttf" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

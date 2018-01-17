@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vFont="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_theme"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_inner" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llMyOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1c76bd"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:id="@+id/textOrderNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                vFont:typeface="helvetica_Bold.ttf" />
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:id="@+id/textStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14"
+                vFont:typeface="helvetica_light_ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:id="@+id/textOrderDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14"
+                vFont:typeface="helvetica_light_ttf" />
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:id="@+id/textAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                vFont:typeface="helvetica_Bold.ttf" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMyOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textNoOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No orders found"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
+        android:visibility="gone" />
+
+</LinearLayout>

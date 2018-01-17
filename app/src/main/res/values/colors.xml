@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#071D2C</color>
+    <color name="colorPrimaryDark">#071D2C</color>
+    <color name="colorAccent">#3D5F72</color>
+
+
+    <color name="light_theme_color">#3D5F72</color>
+
+    <color name="white_dark">#A1A4A5</color>
+
+    <color name="red">#FF002E</color>
+
+    <color name="dark_theme">#021827</color>
+    <color name="light_theme">#071D2C</color>
+
+
+    <color name="blue_buy">#1F6AA1</color>
+
+    <color name="light_highlited">#243B4A</color>
+
+    <color name="font_light_blue">#3f5b70</color>
+
+    <color name="text_blue">#0189e9</color>
+    <color name="white_light">#CACACA</color>
+
+    <color name="sub_green">#1e824c</color>
+
+</resources>

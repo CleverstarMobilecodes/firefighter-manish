@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="roboto_calendar_background">#FFFFFF</color>
+    <color name="roboto_calendar_blue">#55c6da</color>
+    <color name="roboto_calendar_circle">#e6e7e8</color>
+    <color name="roboto_calendar_current_day_of_month">#33b5e5</color>
+    <color name="roboto_calendar_date_title">#2A99BC</color>
+    <color name="roboto_calendar_day_of_month">#fff</color>
+    <color name="roboto_calendar_day_of_week">#161d20</color>
+    <color name="roboto_calendar_green">#168702</color>
+    <color name="roboto_calendar_red">#e98885</color>
+    <color name="roboto_calendar_white">#FFFFFF</color>
+    <color name="text_cal_blue">#0189e9</color>
+    <declare-styleable name="RobotoFonts"><attr format="enum" name="font">
+            <enum name="roboto_thin" value="0"/>
+            <enum name="roboto_thin_italic" value="1"/>
+            <enum name="roboto_light" value="2"/>
+            <enum name="roboto_light_italic" value="3"/>
+            <enum name="roboto_regular" value="4"/>
+            <enum name="roboto_italic" value="5"/>
+            <enum name="roboto_medium" value="6"/>
+            <enum name="roboto_medium_italic" value="7"/>
+            <enum name="roboto_bold" value="8"/>
+            <enum name="roboto_bold_italic" value="9"/>
+            <enum name="roboto_black" value="10"/>
+            <enum name="roboto_black_italic" value="11"/>
+            <enum name="roboto_condensed_light" value="12"/>
+            <enum name="roboto_condensed_light_italic" value="13"/>
+            <enum name="roboto_condensed_regular" value="14"/>
+            <enum name="roboto_condensed_italic" value="15"/>
+            <enum name="roboto_condensed_bold" value="16"/>
+            <enum name="roboto_condensed_bold_italic" value="17"/>
+            <enum name="roboto_slab_thin" value="18"/>
+            <enum name="roboto_slab_light" value="19"/>
+            <enum name="roboto_slab_regular" value="20"/>
+            <enum name="roboto_slab_bold" value="21"/>
+        </attr></declare-styleable>
+    <declare-styleable name="RobotoTextView"><attr name="font"/></declare-styleable>
+    <dimen name="roboto_calendar_date_title_font">16sp</dimen>
+    <dimen name="roboto_calendar_date_title_padding_bottom">5dp</dimen>
+    <dimen name="roboto_calendar_day_of_month_background_size">32dp</dimen>
+    <dimen name="roboto_calendar_day_of_month_image_margin_top">20dp</dimen>
+    <dimen name="roboto_calendar_day_of_month_indicator_size">3dp</dimen>
+    <dimen name="roboto_calendar_day_of_week_font">14sp</dimen>
+    <dimen name="roboto_calendar_padding">8dp</dimen>
+    <dimen name="roboto_calendar_underline_height">2dp</dimen>
+    <dimen name="roboto_calendar_underline_weight">6dp</dimen>
+    <dimen name="roboto_calendar_week_bottom_padding">5dp</dimen>
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="DayOfTheMonth">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_month</item>
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="DayOfTheWeek">
+        <item name="android:textSize">@dimen/roboto_calendar_day_of_week_font</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_month</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+    <style name="MonthTitle">
+        <item name="android:textSize">@dimen/roboto_calendar_date_title_font</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+</resources>

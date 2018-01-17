@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:vFont="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/light_unlock_bg"
+              android:gravity="center"
+              android:minWidth="250dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.firefighterscalendar.custom.CustomTextView
+            android:id="@+id/textCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="@string/slide_transition_time"
+            android:textColor="@color/white_dark"
+            android:textSize="@dimen/sp_12"
+            vFont:typeface="helvetica_ttf"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/white_dark"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:id="@+id/text3s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:background="@drawable/slide_round"
+                android:gravity="center"
+                android:text="3s"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                vFont:typeface="helvetica_Bold.ttf"/>
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:id="@+id/text5s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:background="@drawable/slide_round"
+                android:gravity="center"
+                android:text="5s"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                vFont:typeface="helvetica_Bold.ttf"/>
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:id="@+id/text10s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:background="@drawable/slide_round"
+                android:gravity="center"
+                android:text="10s"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                vFont:typeface="helvetica_Bold.ttf"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

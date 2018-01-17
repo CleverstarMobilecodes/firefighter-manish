@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vFont="http://schemas.android.com/apk/res-auto"
+    android:layout_width="190dp"
+    android:layout_height="match_parent"
+    android:background="@color/light_theme"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_25"
+            android:background="@color/dark_theme"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/purchasing"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/light_theme_color">
+
+            </FrameLayout>
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:id="@+id/txtFreeCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="@string/free_credit_intro"
+                android:textColor="@color/white_dark"
+                android:textSize="12sp"
+                vFont:typeface="helvetica_light_ttf" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/dark_theme"
+                    android:orientation="vertical" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/red" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/light_theme"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/red_rectangle_round_corner"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="MONTHLY SUBSCRIPTION"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_5">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/light_highlited"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/red" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/light_highlited"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/wildfire" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.firefighterscalendar.custom.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:gravity="center"
+                            android:text="$0.99"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_18"
+                            vFont:typeface="helvetica_Bold.ttf" />
+
+                    </LinearLayout>
+
+                    <com.firefighterscalendar.custom.CustomTextView
+                        android:id="@+id/textPurchase"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:background="@drawable/blue_rectangle_round_corner"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/buy"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_14"
+                        vFont:typeface="helvetica_Bold.ttf" />
+
+                    <com.firefighterscalendar.custom.CustomTextView
+                        android:id="@+id/textRestore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/blue_rectangle_round_corner"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/restore"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_14"
+                        vFont:typeface="helvetica_Bold.ttf" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/red_rectangle"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/most_popular"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <com.firefighterscalendar.custom.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="The above prices are based on the US store, prices may vary between countries"
+            android:textColor="@color/white_dark"
+            android:textSize="12sp"
+            vFont:typeface="helvetica_light_ttf" />
+
+    </LinearLayout>
+</ScrollView>

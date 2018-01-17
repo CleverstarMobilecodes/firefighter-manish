@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vFont="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_theme"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_inner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/banerbg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:src="@drawable/banermug" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.firefighterscalendar.custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FEATURED "
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_19"
+                        vFont:typeface="helvetica_Bold.ttf" />
+
+                    <com.firefighterscalendar.custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ITEM"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_19"
+                        vFont:typeface="helvetica_ttf" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/blue_buy" />
+
+                <com.firefighterscalendar.custom.CustomTextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_2"
+                    android:text="2017 CALENDAR"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_19"
+                    vFont:typeface="helvetica_ttf" />
+
+                <com.firefighterscalendar.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="Raise funds for the Children's Hospital Foundation and the Westmead Children's Hospital Burns unit!"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_14"
+                    vFont:typeface="helvetica_ttf" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/red" />
+
+            <com.firefighterscalendar.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/light_theme"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="@string/hottest_products"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                vFont:typeface="helvetica_ttf" />
+        </FrameLayout>
+
+        <GridView
+            android:id="@+id/gvItemList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/dp_2"
+            android:numColumns="2"
+            android:scrollbars="vertical"
+            android:verticalSpacing="@dimen/dp_5" />
+    </LinearLayout>
+</LinearLayout>

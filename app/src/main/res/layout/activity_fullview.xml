@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:vFont="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/dark_theme"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_inner"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:id="@+id/llSlide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="@color/red"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="bottom"
+                android:background="@color/dark_theme"/>
+
+        </LinearLayout>
+
+        <com.firefighterscalendar.custom.CustomTextView
+            android:id="@+id/textUnlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:drawableTop="@drawable/img_lock"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_20"
+            android:text="@string/tap_to_unlock"
+            android:textColor="@color/font_light_blue"
+            android:textSize="@dimen/sp_14"
+            vFont:typeface="helvetica_ttf"/>
+
+    </FrameLayout>
+</LinearLayout>

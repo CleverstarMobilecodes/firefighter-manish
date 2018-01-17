@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "574287737148",
+    "project_id": "firebase-firefighter"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574287737148:android:a100eb089c77feeb",
+        "android_client_info": {
+          "package_name": "com.firefighterscalendar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwKtrl7sckGoEm4_O7DWUexiHcWw53_J4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

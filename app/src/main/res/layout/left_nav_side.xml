@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:vFont="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/light_theme"
+			android:fillViewport="true">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dp_25"
+			android:background="@color/dark_theme"
+			android:orientation="vertical">
+
+			<FrameLayout
+				android:id="@+id/flProfilepic"
+				android:layout_width="105dp"
+				android:layout_height="105dp"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="@dimen/dp_10">
+
+				<ImageView
+					android:id="@+id/imgPlaceHolder"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"/>
+
+				<ImageView
+					android:id="@+id/imgPic"
+					android:layout_width="95dp"
+					android:layout_height="95dp"
+					android:layout_gravity="center"/>
+			</FrameLayout>
+
+			<com.firefighterscalendar.custom.CustomTextView
+				android:id="@+id/textUserName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textColor="@android:color/white"
+				android:textSize="@dimen/sp_18"
+				vFont:typeface="helvetica_Bold.ttf"/>
+
+
+			<com.firefighterscalendar.custom.CustomTextView
+				android:id="@+id/textSubscribe"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_margin="@dimen/dp_10"
+				android:background="@drawable/red_button"
+				android:padding="5dp"
+				android:text="@string/subscribe"
+				android:textColor="@android:color/white"
+				vFont:typeface="helvetica_ttf"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:padding="@dimen/dp_10">
+
+			<com.firefighterscalendar.custom.CustomTextView
+				android:id="@+id/textMyOrder"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/red_bar"
+				android:drawablePadding="@dimen/dp_5"
+				android:padding="@dimen/dp_10"
+				android:text="MY ORDERS"
+				android:textColor="@color/white_dark"
+				android:textSize="@dimen/sp_14"
+				vFont:typeface="helvetica_ttf"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:background="@color/light_theme_color"/>
+
+			<com.firefighterscalendar.custom.CustomTextView
+				android:id="@+id/textCart"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/red_bar"
+				android:drawablePadding="@dimen/dp_5"
+				android:padding="@dimen/dp_10"
+				android:text="MY CART"
+				android:textColor="@color/white_dark"
+				android:textSize="@dimen/sp_14"
+				vFont:typeface="helvetica_ttf"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:background="@color/light_theme_color"/>
+
+			<com.firefighterscalendar.custom.CustomTextView
+				android:id="@+id/textTerms"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/red_bar"
+				android:drawablePadding="@dimen/dp_5"
+				android:padding="@dimen/dp_10"
+				android:text="PRIVACY POLICY"
+				android:textColor="@color/white_dark"
+				android:textSize="@dimen/sp_14"
+				vFont:typeface="helvetica_ttf"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:background="@color/light_theme_color"/>
+
+			<com.firefighterscalendar.custom.CustomTextView
+				android:id="@+id/textAboutCharity"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/red_bar"
+				android:drawablePadding="@dimen/dp_5"
+				android:padding="@dimen/dp_10"
+				android:text="ABOUT THE CHARITY"
+				android:textColor="@color/white_dark"
+				android:textSize="@dimen/sp_14"
+				vFont:typeface="helvetica_ttf"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:background="@color/light_theme_color"/>
+
+			<com.firefighterscalendar.custom.CustomTextView
+				android:id="@+id/textNotification"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/red_bar"
+				android:drawablePadding="@dimen/dp_5"
+				android:padding="@dimen/dp_10"
+				android:text="NOTIFICATIONS"
+				android:textColor="@color/white_dark"
+				android:textSize="@dimen/sp_14"
+				vFont:typeface="helvetica_ttf"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:background="@color/light_theme_color"/>
+
+			<com.firefighterscalendar.custom.CustomTextView
+				android:id="@+id/textAboutUs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/red_bar"
+				android:drawablePadding="@dimen/dp_5"
+				android:padding="@dimen/dp_10"
+				android:text="@string/about_us"
+				android:textColor="@color/white_dark"
+				android:textSize="@dimen/sp_14"
+				vFont:typeface="helvetica_ttf"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:background="@color/light_theme_color"/>
+
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

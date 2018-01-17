@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:vFont="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@drawable/loginbg"
+			  android:orientation="vertical">
+
+	<!--<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="centerCrop"
+		android:src="@drawable/loginbg" />
+
+		Change done by Manish Dutta
+	-->
+
+	<LinearLayout
+		android:id="@+id/loginContainerLayout"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:paddingLeft="@dimen/dp_45"
+				android:paddingRight="@dimen/dp_45">
+
+				<FrameLayout
+					android:id="@+id/flProfilepic"
+					android:layout_width="140dp"
+					android:layout_height="140dp"
+					android:layout_gravity="center"
+					android:layout_margin="@dimen/dp_10"
+					android:visibility="gone">
+
+					<ImageView
+						android:id="@+id/imgPlaceHolder"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+						android:src="@drawable/white_bg"/>
+
+					<ImageView
+						android:id="@+id/imgPic"
+						android:layout_width="130dp"
+						android:layout_height="130dp"
+						android:layout_gravity="center"/>
+				</FrameLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="35dp"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<com.firefighterscalendar.custom.CustomEditText
+						android:id="@+id/editFirstName"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center_horizontal"
+						android:layout_weight="0.5"
+						android:background="@null"
+						android:gravity="center"
+						android:hint="@string/first_name"
+						android:imeOptions="actionNext"
+						android:inputType="textPersonName"
+						android:maxLines="1"
+						android:textColor="@android:color/white"
+						android:textColorHint="@color/light_theme_color"
+						android:textSize="@dimen/sp_14"
+						vFont:typeface="helvetica_ttf"/>
+
+					<View
+						android:layout_width="@dimen/dp_2"
+						android:layout_height="match_parent"
+						android:layout_marginBottom="@dimen/dp_5"
+						android:layout_marginTop="@dimen/dp_5"
+						android:background="@color/light_theme_color"/>
+
+					<com.firefighterscalendar.custom.CustomEditText
+						android:id="@+id/editLastName"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="0.5"
+						android:background="@null"
+						android:ems="10"
+						android:gravity="center"
+						android:hint="@string/last_name"
+						android:imeOptions="actionNext"
+						android:inputType="textPersonName"
+						android:maxLines="1"
+						android:nextFocusDown="@+id/editMobileNumber"
+						android:nextFocusForward="@+id/editMobileNumber"
+						android:textColor="@android:color/white"
+						android:textColorHint="@color/light_theme_color"
+						android:textSize="@dimen/sp_14"
+						vFont:typeface="helvetica_ttf"/>
+
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginLeft="3dp"
+					android:layout_marginRight="3dp"
+					android:background="@color/light_theme_color"/>
+
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginLeft="3dp"
+					android:layout_marginRight="3dp"
+					android:background="@color/light_theme_color"/>
+
+				<com.firefighterscalendar.custom.CustomEditText
+					android:id="@+id/editEmail"
+					android:layout_width="match_parent"
+					android:layout_height="35dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="@dimen/dp_5"
+					android:background="@null"
+					android:gravity="center"
+					android:hint="@string/email_add"
+					android:imeOptions="actionDone"
+					android:inputType="textEmailAddress"
+					android:maxLines="1"
+					android:textColor="@android:color/white"
+					android:textColorHint="@color/light_theme_color"
+					android:textSize="@dimen/sp_14"
+					vFont:typeface="helvetica_ttf"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginLeft="3dp"
+					android:layout_marginRight="3dp"
+					android:background="@color/light_theme_color"/>
+
+				<com.firefighterscalendar.custom.CustomEditText
+					android:id="@+id/editPassword"
+					android:layout_width="match_parent"
+					android:layout_height="35dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="@dimen/dp_5"
+					android:background="@null"
+					android:gravity="center"
+					android:hint="@string/password_star"
+					android:imeOptions="actionGo"
+					android:inputType="textPassword"
+					android:maxLines="1"
+					android:textColor="@android:color/white"
+					android:textColorHint="@color/light_theme_color"
+					android:textSize="@dimen/sp_14"
+					vFont:typeface="helvetica_ttf"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginLeft="3dp"
+					android:layout_marginRight="3dp"
+					android:background="@color/light_theme_color"/>
+
+				<com.firefighterscalendar.custom.CustomEditText
+					android:id="@+id/editRetypePass"
+					android:layout_width="match_parent"
+					android:layout_height="35dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="@dimen/dp_5"
+					android:background="@null"
+					android:gravity="center"
+					android:hint="@string/retype_pass"
+					android:imeOptions="actionGo"
+					android:inputType="textPassword"
+					android:maxLines="1"
+					android:textColor="@android:color/white"
+					android:textColorHint="@color/light_theme_color"
+					android:textSize="@dimen/sp_14"
+					vFont:typeface="helvetica_ttf"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginLeft="3dp"
+					android:layout_marginRight="3dp"
+					android:background="@color/light_theme_color"/>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+
+
+	<com.firefighterscalendar.custom.CustomTextView
+		android:id="@+id/txtCreateAcc"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_80"
+		android:background="#ed1c25"
+		android:gravity="center"
+		android:text="@string/create_acc"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/sp_20"
+		vFont:typeface="helvetica_ttf"/>
+</LinearLayout>
